@@ -38,3 +38,11 @@ The supplied resume PDF is already included at `public/resume.pdf`.
 6. Deploy.
 
 For a custom domain, update `og:url` in `index.html` after the domain is assigned.
+
+
+## Vercel deployment
+
+- Framework preset: Vite
+- Build command: `npm run build`
+- Output directory: `dist`
+- The Vite scripts invoke the Vite CLI through Node directly to avoid `.bin/vite` executable-permission issues in deployment environments.
